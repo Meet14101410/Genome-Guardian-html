@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Genome Guardian</title>
+</head>
+<body style="text-align:center;font-family:Arial;">
+  <h1>🧬 Genome Guardian</h1>
+  <p>Protect the DNA by clicking correct bases!</p>
+
+  <button onclick="score++">Correct Base</button>
+  <button onclick="score--">Mutation!</button>
+
+  <h2 id="score">Score: 0</h2>
+
+  <script>
+    let score = 0;
+    setInterval(() => {
+      document.getElementById("score").innerText = "Score: " + score;
+    }, 100);
+  </script>
+</body>
+</html>
