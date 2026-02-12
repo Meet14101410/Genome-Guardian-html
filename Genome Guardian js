@@ -1,0 +1,15 @@
+let score = 0;
+const bases = ["A", "T", "G", "C"];
+
+function nextBase() {
+  const base = bases[Math.floor(Math.random() * 4)];
+  document.getElementById("dna").innerText = base;
+}
+
+function check(correct) {
+  score += correct ? 1 : -1;
+  document.getElementById("score").innerText = "Score: " + score;
+  nextBase();
+}
+
+nextBase();
